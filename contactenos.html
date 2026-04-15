@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConIngenio | Contáctenos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-logo">CI</div>
+        <div>
+          <p class="eyebrow">ConIngenio</p>
+          <h1>Consultoría & Desarrollo de Software</h1>
+        </div>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="servicios.html">Nuestros Servicios</a>
+      <a href="contactenos.html">Contáctenos</a>
+      <a href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main>
+      <section class="section contact-section">
+        <div class="contact-content">
+          <div class="contact-copy">
+            <div class="section-heading">
+              <p class="eyebrow">Contáctenos</p>
+              <h2>Envíanos tu consulta y nos pondremos en contacto.</h2>
+            </div>
+            <p>Completa el formulario y recibirás una respuesta de nuestro equipo de consultoría digital.</p>
+            <div class="contact-info-box">
+              <p><strong>Dirección:</strong> Av. Providencia 1234, Oficina 601</p>
+              <p><strong>Teléfono:</strong> +56 2 1234 5678</p>
+              <p><strong>Email:</strong> info@coningenio.cl</p>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <label for="fullName">Nombre completo</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Ingresa tu nombre completo" required />
+            <span class="input-error" id="nameError"></span>
+
+            <label for="service">Servicio deseado</label>
+            <select id="service" name="service" required>
+              <option value="">Seleccione un servicio</option>
+              <option value="Consultoría Digital">Consultoría Digital</option>
+              <option value="Soluciones Multiexperiencia">Soluciones Multiexperiencia</option>
+              <option value="Evolución de Ecosistemas">Evolución de Ecosistemas</option>
+              <option value="Soluciones Low-Code">Soluciones Low-Code</option>
+            </select>
+            <span class="input-error" id="serviceError"></span>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos tu proyecto o consulta" required></textarea>
+            <span class="input-error" id="messageError"></span>
+
+            <button type="submit" class="button button-secondary">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 ConIngenio. Página web de Consultoría y Desarrollo de Software.</p>
+      <p>Dominio: www.coningenio.cl</p>
+    </footer>
+  </div>
+
+</body>
+</html>
