@@ -173,27 +173,26 @@ body {
 }
 
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  text-align: center;
   border: none;
   border-radius: 999px;
   cursor: pointer;
   padding: 14px 24px;
   font-weight: 700;
   text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .button-primary {
   background: var(--primary);
   color: #ffffff;
-  margin-top: 24px;
 }
 
 .button-secondary {
   background: var(--accent);
   color: #0f172a;
-  width: 100%;
 }
 
 .hero-card {
