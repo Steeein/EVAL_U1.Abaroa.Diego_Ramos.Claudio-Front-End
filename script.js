@@ -9,11 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
+      // Cambiar el emoji del botón
+      themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
     });
 
     // Aplicamos el tema guardado al cargar.
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
+    // Establecer el emoji inicial
+    themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
   }
 });
 
