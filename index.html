@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="page-shell">
+    <!-- Aquí va el header con logo y nombre de la empresa. Usamos <header> para marcar el inicio del sitio y mantener el orden semántico. -->
     <header class="site-header">
       <div class="brand">
         <div class="brand-logo">CI</div>
@@ -16,8 +17,11 @@
           <h1>Consultoría & Desarrollo de Software</h1>
         </div>
       </div>
+      <!-- Botón para cambiar entre modo día y noche. -->
+      <button class="theme-toggle">🌙</button>
     </header>
 
+    <!-- Navegación principal con links a las páginas. Usamos <nav> para que los motores de búsqueda entiendan que es el menú. -->
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="servicios.html">Nuestros Servicios</a>
@@ -25,7 +29,9 @@
       <a href="nosotros.html">Nosotros</a>
     </nav>
 
+    <!-- Contenido principal de la página. Todo lo importante va aquí dentro de <main> para que sea semántico. -->
     <main>
+      <!-- Sección de inicio con el hero y la info de contacto. Usamos <section> para separar esta parte del resto. -->
       <section class="hero section">
         <div class="hero-copy">
           <p class="eyebrow">Soluciones digitales integrales</p>
@@ -53,12 +59,14 @@
         </div>
       </section>
 
+      <!-- Sección de servicios destacados. Aquí listamos lo que ofrecemos, todo dentro de <section> para organizar. -->
       <section class="section services-section">
         <div class="section-heading">
           <p class="eyebrow">Nuestros Servicios</p>
           <h2>Servicios destacados para empresas que buscan innovar.</h2>
         </div>
         <div class="services-grid">
+          <!-- Cada servicio va en un <article> porque son contenidos independientes que se pueden reutilizar. -->
           <article class="service-card">
             <h3>Consultoría Digital</h3>
             <p>Diagnóstico y recomendaciones para transformar su negocio con tecnología.</p>
@@ -79,11 +87,13 @@
       </section>
     </main>
 
+    <!-- Footer con copyright. Usamos <footer> para cerrar el sitio de manera semántica. -->
     <footer class="site-footer">
       <p>© 2026 ConIngenio. Página web de Consultoría y Desarrollo de Software.</p>
       <p>Dominio: www.coningenio.cl</p>
     </footer>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 :root {
+  /* Colores base para el día: tonos claros para fondo y texto, nada agresivo. */
   --bg: #f4f7fb;
   --surface: #ffffff;
   --surface-strong: #e7ecf3;
@@ -12,6 +13,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  /* Colores para el modo noche: oscuros para no cansar los ojos. */
   :root {
     --bg: #0f172a;
     --surface: #111827;
@@ -24,6 +26,20 @@
     --border: rgba(148, 163, 184, 0.2);
     --shadow: 0 24px 70px rgba(15, 23, 42, 0.35);
   }
+}
+
+/* Para el toggle manual del modo noche */
+:root[data-theme="dark"] {
+  --bg: #0f172a;
+  --surface: #111827;
+  --surface-strong: #1f2937;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --primary: #60a5fa;
+  --primary-soft: #1e3a8a;
+  --accent: #fbbf24;
+  --border: rgba(148, 163, 184, 0.2);
+  --shadow: 0 24px 70px rgba(15, 23, 42, 0.35);
 }
 
 * {
@@ -315,6 +331,7 @@ body {
   color: var(--text-muted);
 }
 
+/* Para iPad y tablets: cambiamos a una columna porque el espacio es limitado. */
 @media (max-width: 980px) {
   .hero,
   .contact-section .contact-content,
@@ -328,6 +345,7 @@ body {
   }
 }
 
+/* Para móviles grandes como iPhone landscape: ajustamos padding y header. */
 @media (max-width: 720px) {
   .page-shell {
     padding: 18px;
@@ -347,6 +365,7 @@ body {
   }
 }
 
+/* Para móviles pequeños como iPhone 14 Pro Max: fuentes más chicas y botones full width. */
 @media (max-width: 520px) {
   .hero-copy h2,
   .section-heading h2 {

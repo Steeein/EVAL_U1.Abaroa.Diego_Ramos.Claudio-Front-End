@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="page-shell">
+    <!-- Header con logo, igual en todas. <header> para el top. -->
     <header class="site-header">
       <div class="brand">
         <div class="brand-logo">CI</div>
@@ -16,8 +17,11 @@
           <h1>Consultoría & Desarrollo de Software</h1>
         </div>
       </div>
+      <!-- Botón para cambiar entre modo día y noche. -->
+      <button class="theme-toggle">🌙</button>
     </header>
 
+    <!-- Navegación para ir a otras páginas. <nav> es clave para SEO. -->
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="servicios.html">Nuestros Servicios</a>
@@ -25,7 +29,9 @@
       <a href="nosotros.html">Nosotros</a>
     </nav>
 
+    <!-- Lo principal aquí es el formulario. <main> para el contenido estrella. -->
     <main>
+      <!-- Sección de contacto con form y info. <section> para separar del resto. -->
       <section class="section contact-section">
         <div class="contact-content">
           <div class="contact-copy">
@@ -41,6 +47,7 @@
             </div>
           </div>
 
+          <!-- Formulario para que manden consultas. <form> con validaciones en JS. -->
           <form id="contactForm" class="contact-form" novalidate>
             <label for="fullName">Nombre completo</label>
             <input type="text" id="fullName" name="fullName" placeholder="Ingresa tu nombre completo" required />
@@ -66,11 +73,13 @@
       </section>
     </main>
 
+    <!-- Footer al final. <footer> cierra el sitio. -->
     <footer class="site-footer">
       <p>© 2026 ConIngenio. Página web de Consultoría y Desarrollo de Software.</p>
       <p>Dominio: www.coningenio.cl</p>
     </footer>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>

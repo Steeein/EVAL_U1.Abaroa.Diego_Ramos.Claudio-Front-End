@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="page-shell">
+    <!-- Header estándar con el logo. <header> para el top del sitio. -->
     <header class="site-header">
       <div class="brand">
         <div class="brand-logo">CI</div>
@@ -16,8 +17,11 @@
           <h1>Consultoría & Desarrollo de Software</h1>
         </div>
       </div>
+      <!-- Botón para cambiar entre modo día y noche. -->
+      <button class="theme-toggle">🌙</button>
     </header>
 
+    <!-- Menú de navegación. <nav> para que sea claro. -->
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="servicios.html">Nuestros Servicios</a>
@@ -25,13 +29,16 @@
       <a href="nosotros.html">Nosotros</a>
     </nav>
 
+    <!-- Contenido principal sobre nosotros. <main> aquí. -->
     <main>
+      <!-- Info sobre la empresa: misión, visión, valores. <section> para agrupar. -->
       <section class="section about-section">
         <div class="section-heading">
           <p class="eyebrow">Nosotros</p>
           <h2>Comprometidos con una visión clara y valores orientados a resultados.</h2>
         </div>
         <div class="about-grid">
+          <!-- Cada parte (misión, visión, valores) en <article> porque son independientes. -->
           <article class="about-card">
             <h3>Misión</h3>
             <p>Apoyar a empresas en su desarrollo digital con soluciones inteligentes, eficientes y centradas en el usuario.</p>
@@ -48,11 +55,13 @@
       </section>
     </main>
 
+    <!-- Footer con el copyright. <footer> para el cierre. -->
     <footer class="site-footer">
       <p>© 2026 ConIngenio. Página web de Consultoría y Desarrollo de Software.</p>
       <p>Dominio: www.coningenio.cl</p>
     </footer>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
