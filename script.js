@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('theme', newTheme);
       // Cambiar el emoji del botón
       themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+      console.log('Tema cambiado a:', newTheme);
     });
 
     // Aplicamos el tema guardado al cargar.
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.setAttribute('data-theme', savedTheme);
     // Establecer el emoji inicial
     themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+    console.log('Tema cargado:', savedTheme);
   }
 });
 
